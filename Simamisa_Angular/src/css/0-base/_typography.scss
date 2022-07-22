@@ -1,0 +1,19 @@
+@use "../3-helpers/_mixins.scss" as m;
+
+/**
+ * Font faces
+ */
+@font-face {
+    font-family: Signika;
+    src: url('./Signika_Negative/SignikaNegative-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: Vollkorn;
+    src: url('./Vollkorn/Vollkorn-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: Vollkorn_Italic;
+    src: url('./Vollkorn/Vollkorn-Italic-VariableFont_wght.ttf');
+}
