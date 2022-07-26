@@ -1,0 +1,113 @@
+@use "../3-helpers/_mixins.scss" as m;
+
+/**
+ * Font faces
+ */
+@font-face {
+    font-family: Signika;
+    src: url('./Signika_Negative/SignikaNegative-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: Vollkorn;
+    src: url('./Vollkorn/Vollkorn-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: Vollkorn_Italic;
+    src: url('./Vollkorn/Vollkorn-Italic-VariableFont_wght.ttf');
+}
+
+/**
+ Font weight guide
+ @param int
+ *****************
+ * 300 - Thin (doesn't work on all fonts)
+ * 400 - Regular
+ * 500 - Medium
+ * 600 - SemiBold
+ * 700 - Bold
+ * 800 - ExtraBold (doesn't work on all fonts)
+ * 900 - Black (doesn't work on all fonts)
+ *****************
+ **/
+
+h1 {
+    @include m.font-sans-serif(800);
+    text-transform: capitalize;
+    color: black;
+    font-size: 2.1rem;
+
+    &.italic {
+        @include m.font-sans-serif-italic(800);
+    }
+}
+
+h2 {
+    @include m.font-sans-serif(700);
+    color: black;
+    font-size: 1.7rem;
+
+    &.italic {
+        @include m.font-sans-serif-italic(700);
+    }
+}
+
+h3 {
+    @include m.font-sans-serif(600);
+    color: black;
+    font-size: 1.5rem;
+
+    &.italic {
+        @include m.font-sans-serif-italic(600);
+    }
+}
+
+h4 {
+    @include m.font-sans-serif(500);
+    color: black;
+    font-size: 1.3rem;
+
+    &.italic {
+        @include m.font-sans-serif-italic(500);
+    }
+}
+
+h5 {
+    @include m.font-sans-serif(400);
+    color: black;
+    font-size: 1.1rem;
+
+    &.italic {
+        @include m.font-sans-serif-italic(400);
+    }
+}
+
+p {
+    color: black;
+    font-size: 0.9rem;
+
+    &.bold {
+        @include m.font-serif(700);
+    }
+
+    &.semibold {
+        @include m.font-serif(600);
+    }
+
+    &.medium {
+        @include m.font-serif(500);
+    }
+
+    &.regular {
+        @include m.font-serif(400);
+    }
+
+    &.thin {
+        @include m.font-serif(300);
+    }
+}
+
+.light {
+    color: white;
+}

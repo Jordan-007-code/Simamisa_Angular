@@ -1,0 +1,14 @@
+@mixin font-serif($font-wght) {
+    font-family: Signika;
+    font-variation-settings: "wght"$font-wght;
+}
+
+@mixin font-sans-serif($font-wght) {
+    font-family: Vollkorn;
+    font-variation-settings: "wght"$font-wght;
+}
+
+@mixin font-sans-serif-italic($font-wght) {
+    font-family: Vollkorn_Italic;
+    font-variation-settings: "wght"$font-wght;
+}
